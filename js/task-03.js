@@ -17,10 +17,3 @@ images.forEach((image) => {  //dla każdego elementu image z images
   let tekst = (`<li><img><img src = ${image.url}> alt = "${image.alt}"</img></li>`) //stówrz tekst o podanym formacie
   gallery.insertAdjacentHTML("beforeend", tekst)/// dodaj w dziecku na końcu łańcucha ww. tekst
 })
-
-// addPhotos(...arg)=> {
-//   let tekst = (`<li><img> url = ${arg.url}, alt= ${arg.alt} </img> </li>`)
-//   gallery.insertAdjacentHTML("beforeend", tekst)
-// }
-
-// gallery.addPhotos(images)
