@@ -14,6 +14,6 @@ const images = [
 ];
 const gallery = document.querySelector(".gallery"); // ustawienie parent na wyszukanym id gallery
 const items = images.map((image) => { //mapowanie każdego elementu images
-    return `<li><img src=${image.url} /> alt ="${image.alt}" </li>`; //zwróć do tablicy o podanej frazie
+    return (`<li><img src=${image.url} /> alt ="${image.alt}" </li>`); //zwróć do tablicy o podanej frazie
   }).join(" "); // wywołaj funkcję join
 gallery.insertAdjacentHTML("beforeend", items); /// dodaj w dziecku na końcu łańcucha ww. stworzoną nową tablicę i sformatowaną do HTML
